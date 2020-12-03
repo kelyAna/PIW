@@ -1,6 +1,7 @@
 // Importando módulo express (Padrão CommonJS)
 const express = require('express');
 const routerUsuarios = require('../app/routes/usuarios');
+const routersPosts = require('../app/routes/posts')
 const bodyParser = require("body-parser")
 
 // Exportando módulo (Padrão CommonJS)
@@ -14,5 +15,6 @@ module.exports = function () {
     
     app.use(express.static('./public'));
     routerUsuarios(app);
+    routersPosts(app);
     return app;
 }
