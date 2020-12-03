@@ -16,14 +16,7 @@ module.exports.inserirUsuario = function(req,res){
 }
 
 module.exports.listarUsuarios = function (req, res) {
-    let usuarios_retorno = usuarios;
-    if(req.query.nome){
-        let nome = req.query.nome;
-        usuarios_retorno = usuarios.filter(function(usuario){
-            return usuario.nome==nome
-        });
-    }
-    res.json(usuarios_retorno);
+    res.json(usuarios);
 }
 
 module.exports.buscarUsuarioPorId = function (req, res) {

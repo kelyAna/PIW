@@ -15,14 +15,7 @@ module.exports.inserirPost = function(req,res){
 }
 
 module.exports.listarPosts = function (req, res) {
-    let posts_retorno = posts;
-    if(req.query.nome){
-        let nome = req.query.nome;
-        posts_retorno = posts.filter(function(post){
-            return post.nome==nome
-        });
-    }
-    res.json(posts_retorno);
+    res.json(posts);
 }
 
 module.exports.buscarPostPorId = function (req, res) {
