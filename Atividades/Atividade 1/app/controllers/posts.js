@@ -24,21 +24,21 @@ module.exports.listarPosts = function (req, res) {
     }
     res.json(posts_retorno);
 }
-/*
-module.exports.buscarUsuarioPorId = function (req, res) {
+
+module.exports.buscarPostPorId = function (req, res) {
     let id = req.params.id;
-    let usuario = posts.find(function (usuario) {
-        return usuario.id == id;
+    let post = posts.find(function (post) {
+        return post.id == id;
     });
-    if (usuario) {
-        res.json(usuario)
+    if (post) {
+        res.json(post)
     } else {
         res.json({
-            mensagem: "Usuário não encontrado"
+            mensagem: "Post não encontrado."
         }).status(4040);
     }
 }
-
+/*
 module.exports.removerUsuario = function(req,res){
     let id = req.params.id;
 
