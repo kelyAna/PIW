@@ -13,18 +13,18 @@ module.exports.inserirPost = function(req,res){
     posts.push(post);
     res.json(post).status(201);
 }
-/*
+
 module.exports.listarPosts = function (req, res) {
     let posts_retorno = posts;
     if(req.query.nome){
         let nome = req.query.nome;
-        posts_retorno = posts.filter(function(usuario){
-            return usuario.nome==nome
+        posts_retorno = posts.filter(function(post){
+            return post.nome==nome
         });
     }
     res.json(posts_retorno);
 }
-
+/*
 module.exports.buscarUsuarioPorId = function (req, res) {
     let id = req.params.id;
     let usuario = posts.find(function (usuario) {
