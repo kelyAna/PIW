@@ -35,19 +35,15 @@ module.exports.buscarUsuarioPorId = function (req, res) {
         res.json(usuario)
     } else {
         res.json({
-            mensagem: "Usuario não encontrado"
+            mensagem: "Usuário não encontrado"
         }).status(4040);
     }
 }
-/*
 
-
-
-module.exports.removerAluno = function(req,res){
+module.exports.removerUsuario = function(req,res){
     let id = req.params.id;
 
-    alunos = alunos.filter(function(aluno){return aluno.id != id;});
+    usuarios = usuarios.filter(function(usuario){return usuario.id != id;});
 
-    res.json({mensagem: "Aluno excluído."})
+    res.json({mensagem: "Usuário excluído."})
 }
-*/
