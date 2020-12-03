@@ -8,8 +8,6 @@ module.exports = function (app) {
 
     app.get("/api/posts/:id", controller.buscarPostPorId);
 
-    /*
-
-    app.delete("/api/usuarios/:id", controller.removerUsuario)
-    */
+    app.delete("/api/posts/:id", controller.removerPost)
+    
 }

@@ -38,12 +38,11 @@ module.exports.buscarPostPorId = function (req, res) {
         }).status(4040);
     }
 }
-/*
-module.exports.removerUsuario = function(req,res){
+
+module.exports.removerPost = function(req,res){
     let id = req.params.id;
 
-    posts = posts.filter(function(usuario){return usuario.id != id;});
+    posts = posts.filter(function(post){return post.id != id;});
 
-    res.json({mensagem: "Usuário excluído."})
+    res.json({mensagem: "Post excluído."})
 }
-*/
