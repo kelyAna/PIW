@@ -1,13 +1,11 @@
-const controller = require("../controllers/posts")
+const PostController = require("../controllers/PostController")
 
 module.exports = function (app) {
 
-    app.post("/api/posts", controller.inserirPost);
+    app.post("/api/posts", PostController.inserirPost);
+    app.get("/api/posts", PostController.listarPost);
+    app.get("/api/posts/:id", PostController.buscarPostById);
+    app.get("/api/posts/:id/comentarios", PostController.buscarComentarioByIdPost)
+    app.delete("/api/posts/:id", PostController.removerPost);
 
-    app.get("/api/posts", controller.listarPosts);
-
-    app.get("/api/posts/:id", controller.buscarPostPorId);
-
-    app.delete("/api/posts/:id", controller.removerPost)
-    
 }
