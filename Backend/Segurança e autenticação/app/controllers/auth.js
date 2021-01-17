@@ -25,3 +25,14 @@ module.exports.logar = function(req, res){
     Aluno.findOne({matricula: req.body.matricula}).exec().then(logar,falhar)
 }
 
+module.exports.checar = function(req, res, next){
+    jwt.verify(req.headers.token, 'senha_secreta', function(err, decoder){
+        if(err){
+            return res.status(401).json({
+                title:'Não autenticado.',
+                error: err
+            })
+        }
+        next()
+    })
+}
