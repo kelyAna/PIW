@@ -1,4 +1,5 @@
 const mongoose = require('mongoose')
+const Usuario = require('./UsuarioModel')
 
 module.exports = function(){
     let schema = mongoose.Schema({
@@ -14,7 +15,7 @@ module.exports = function(){
 
         id_usuario:{
             type: mongoose.Schema.ObjectId,
-            required: true
+            ref: "Usuario"
         },
     })
     return mongoose.model('Post', schema)

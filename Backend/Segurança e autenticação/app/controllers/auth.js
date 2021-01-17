@@ -1,13 +1,20 @@
 const bcrypt = require('bcrypt')
+const jwt = require('jsonwebtoken');
+
 const Aluno = require('../models/aluno')
 
 module.exports.logar = function(req, res){
-    function logar(user){
-        if(!bcrypt.compareSync(req.body.senha,user.senha)){
+    function logar(aluno){
+        if(!bcrypt.compareSync(req.body.senha,aluno.senha)){
             falhar();
         }
         else{
-            res.status(200).send("Credenciais estão OK!")
+            let token = jwt.sign({id: aluno.id}, 'senha_secreta')
+            res.status(200).json({
+                message:"Logado",
+                token: token,
+                alunoId: aluno.id
+            })
         }
     }
 

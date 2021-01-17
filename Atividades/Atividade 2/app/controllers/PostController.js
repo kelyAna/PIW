@@ -3,15 +3,15 @@ const viewPost = require('../views/PostView')
 const Comentario = require('../models/ComentarioModel')
 const viewComentario = require('../views/ComentarioView')
 
-module.exports.inserirPost = function(req, res){
+module.exports.inserirPost = function (req, res) {
     let promise = Post.create(req.body)
 
     promise.then(
-        function (post){
+        function (post) {
             res.status(201).json(viewPost.render(post))
         }
     ).catch(
-        function (error){
+        function (error) {
             res.status(500).json(error)
         }
     )
@@ -30,15 +30,18 @@ module.exports.listarPost = function (req, res) {
     );
 }
 
-module.exports.buscarPostById = function(req, res){
+module.exports.buscarPostById = function (req, res) {
     let id = req.params.id
     let promise = Post.findById(id).exec()
 
-    promise.then(function(post){
+    promise.then(function (post) {
         res.status(201).json(viewPost.render(post))
-    }).catch(function(error){
-        res.status(400).json({mensagem: 'Não encontrado', error:error})
-    })
+    }
+    ).catch(
+        function (error) {
+            res.status(400).json({ mensagem: 'Não encontrado', error: error })
+        }
+    )
 }
 
 module.exports.buscarComentarioByIdPost = function (req, res) {
