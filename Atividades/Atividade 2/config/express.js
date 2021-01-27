@@ -8,7 +8,7 @@ const bodyParser = require("body-parser")
 module.exports = function () {
     let app = express();
 
-    app.set("port", 8393);
+    app.set("port", 8093);
     app.use(bodyParser.json());
     app.use(bodyParser.urlencoded({ extended: false }));
     

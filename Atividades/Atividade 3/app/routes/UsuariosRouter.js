@@ -2,8 +2,8 @@ const UsuarioController = require("../controllers/UsuarioController")
 const controllerAuth = require('../controllers/AuthController')
 
 module.exports = function (app) {
-    app.post("/api/usuario/signin", controllerAuth.logar)
     app.post("/api/usuarios", UsuarioController.inserirUsuario);
+    app.post("/api/usuario/signin", controllerAuth.logar)
 
     app.use("/api/usuarios", controllerAuth.checar)
     app.get("/api/usuarios", UsuarioController.listarUsuarios);

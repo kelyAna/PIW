@@ -7,4 +7,4 @@ http.createServer(app).listen(app.get('port'),
         console.log('Express Server escutando na porta'+app.get('port'))
 });
 
-db('mongodb://localhost/redesocial2');
+db('mongodb://localhost/redesocial');

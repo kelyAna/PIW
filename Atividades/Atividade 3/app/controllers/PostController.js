@@ -7,8 +7,17 @@ const jwt = require('jsonwebtoken')
 
 
 module.exports.inserirPost = function (req, res) {
-    let promise = Post.create(req.body)
+    let token = req.headers.token
+    let payload = jwt.decode(token)
+    let id_usuario_logado = payload.id
 
+    let post = {
+        texto: req.body.texto,
+        likes: req.body.likes,
+        id_usuario: id_usuario_logado
+    }
+
+    let promise = Post.create(post)
     promise.then(
         function (post) {
             res.status(201).json(viewPost.render(post))

@@ -85,11 +85,11 @@ module.exports.removerUsuario = function (req, res) {
             }
         ).catch(
             function (error) {
-                res.status(400).json({ mensagem: 'Não foi possível remover.', error: error })
+                res.status(400).json({ mensagem: 'Não foi possível remover usuário.', error: error })
             }
         )
     } else {
-        res.status(401).json({mensagem: 'Credenciais erradas.'})
+        res.status(401).json({mensagem: 'Credenciais erradas.Por favor, faça login!'})
     }
 
 }

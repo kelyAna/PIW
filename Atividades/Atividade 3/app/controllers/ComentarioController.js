@@ -3,7 +3,17 @@ const viewComentario = require('../views/ComentarioView')
 const jwt = require('jsonwebtoken')
 
 module.exports.inserirComentario = function (req, res) {
-    let promise = Comentario.create(req.body)
+    let token = req.headers.token
+    let payload = jwt.decode(token)
+    let id_usuario_logado = payload.id
+
+    let comentario = {
+        texto: req.body.texto,
+        id_comentario: req.body.id_comentario,
+        id_usuario: id_usuario_logado
+    }
+
+    let promise = Comentario.create(comentario)
 
     promise.then(
         function (comentario) {
