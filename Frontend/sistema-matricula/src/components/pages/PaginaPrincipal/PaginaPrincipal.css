@@ -1,7 +1,10 @@
-.fundo-azul{
-    background-color: rgb(209, 209, 225);
+.cabecalho{
+    display: flex;
+    align-items: center;
+    padding: 7px;
+    background-color: burlywood;
 }
 
-body{
-    background-color: burlywood;
+.cabecalho .pagina-atual{
+    margin-left: auto;
 }

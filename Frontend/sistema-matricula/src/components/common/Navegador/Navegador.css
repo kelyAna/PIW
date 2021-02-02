@@ -1,0 +1,15 @@
+.navegador {
+    background-color: cadetblue;
+    display: flex;
+}
+
+.navegador .link-navegador{
+    text-decoration: none;
+    padding: 8px;
+    display: block;
+    color: black;
+}
+
+.navegador .link-navegador:hover{
+    background-color: darkcyan;
+}

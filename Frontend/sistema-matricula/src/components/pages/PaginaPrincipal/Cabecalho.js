@@ -3,9 +3,9 @@ function Cabecalho({paginaAtual}) {
     
     return (
         <div>
-            <header className="fundo-azul">
-                <h1>Matrícula UFC-QXD</h1>
-                <span>Você está na {paginaAtual}</span>
+            <header className="cabecalho">
+                <h1 className="logo">Matrícula UFC-QXD</h1>
+                <span className="pagina-atual">Você está na {paginaAtual}</span>
             </header>
         </div>
     )

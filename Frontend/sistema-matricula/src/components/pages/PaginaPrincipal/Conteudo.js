@@ -1,3 +1,14 @@
+import './Conteudo.css'
+
+function Card({ nome, codigo }) {
+    return (
+        <div className="card">
+            <h3 className="titulo-card">{nome}</h3>
+            <span className="codigo-card">{codigo}</span>
+        </div>
+    )
+}
+
 function Conteudo() {
     let disciplinas = [
         {
@@ -14,18 +25,13 @@ function Conteudo() {
         }
 
     ]
-    /*
-        let listaLis = []
-        for(let i=0; i<disciplinas.length; i++){
-        listaLis.push(<li>{disciplinas[i].nome} - {disciplinas[i].codigo}</li>)
-    }
-    */
-    let listaDisciplinas = disciplinas.map((disciplina)=>(<li>{disciplina.nome} - {disciplina.codigo}</li>))
+    let cards = disciplinas.map((disciplina)=>(
+                                <Card nome={disciplina.nome} codigo={disciplina.codigo}></Card>
+                                )
+                            )
     return (
-        <div>
-            <ul>
-                {listaDisciplinas}
-            </ul>
+        <div className="conteudo-galeria">
+            {cards}
         </div>
     )
 }
