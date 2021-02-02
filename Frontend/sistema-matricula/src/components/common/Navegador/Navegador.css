@@ -1,5 +1,5 @@
 .navegador {
-    background-color: cadetblue;
+    background-color: rgb(253, 233, 207);
     display: flex;
 }
 
@@ -11,5 +11,5 @@
 }
 
 .navegador .link-navegador:hover{
-    background-color: darkcyan;
+    background-color: rgb(214, 192, 164);
 }

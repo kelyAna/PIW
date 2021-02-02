@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     padding: 7px;
-    background-color: burlywood;
+    background-color: rgb(253, 233, 207);
 }
 
 .cabecalho .pagina-atual{

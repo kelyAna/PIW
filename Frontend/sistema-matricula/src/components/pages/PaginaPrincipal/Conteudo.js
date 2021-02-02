@@ -1,14 +1,21 @@
+import classNames from 'classnames'
+
 import './PaginaPrincipal.css'
 
-function Card({ nome, codigo, disponivel }) {
 
+function Card({ nome, codigo, disponivel }) {
+    let nomeClasses = classNames("card",{
+        "fundo-vermelho": !disponivel,
+    })
+    /*
     let nomeClasse = "card";
 
     if (disponivel === false) {
         nomeClasse += " fundo-vermelho";
     }
+    */
     return (
-        <div className={nomeClasse}>
+        <div className={nomeClasses}>
             <h3 className="titulo-card">{nome}</h3>
             <span className="codigo-card">{codigo}</span>
         </div>
