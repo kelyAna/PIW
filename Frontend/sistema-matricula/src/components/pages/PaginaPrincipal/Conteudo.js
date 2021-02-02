@@ -1,11 +1,32 @@
 function Conteudo() {
-    let nome = "João";
-    let link = (<a href="https://www.google.com/">Tio Google</a>)
+    let disciplinas = [
+        {
+            nome: "LMS",
+            codigo: "QXD253",
+        },
+        {
+            nome: "PIW",
+            codigo: "QXD250",
+        },
+        {
+            nome: "PS",
+            codigo: "QXD251",
+        }
+
+    ]
+    /*
+        let listaLis = []
+        for(let i=0; i<disciplinas.length; i++){
+        listaLis.push(<li>{disciplinas[i].nome} - {disciplinas[i].codigo}</li>)
+    }
+    */
+    let listaDisciplinas = disciplinas.map((disciplina)=>(<li>{disciplina.nome} - {disciplina.codigo}</li>))
     return (
-        <p>
-            Meu conteúdo {2 + 4} nome: {nome}
-            link: {link}
-        </p>
+        <div>
+            <ul>
+                {listaDisciplinas}
+            </ul>
+        </div>
     )
 }
 
