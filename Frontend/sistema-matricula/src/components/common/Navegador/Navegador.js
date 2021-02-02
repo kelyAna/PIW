@@ -1,10 +1,9 @@
 
 export function Navegador() {
+    let Link = (linkTexto) => (<a className="link-navegador" href="https://www.google.com/">{linkTexto}</a>)
     return (<div>
             <nav>
-                <a href="https://www.google.com/">Link 1</a>
-                <a href="https://www.google.com/">Link 2</a>
-                <a href="https://www.google.com/">Link 3</a>
+                <Link linkTexto="Inicio"></Link>
             </nav>
         </div>
     )    
