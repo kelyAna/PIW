@@ -1,0 +1,55 @@
+.navegador {
+    background-color: rgb(191, 189, 187);
+    display: flex;
+    width: 700px;
+    text-align: center;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.navegador li{
+    list-style: none;
+}
+
+.navegador .link-navegador{
+    margin: 3px;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 15px;
+    display: block;
+    color: rgb(70, 67, 67);
+    font-weight: bold;
+    background-color: rgb(191, 189, 187);
+}
+
+.navegador .link-linha{
+    margin: 3px;
+    border-radius: 5%;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 15px;
+    display: block;
+    color: rgb(70, 67, 67);
+    font-weight: bold;
+    background-color: rgb(206, 204, 202);
+}
+
+.navegador .logo{
+    padding: 30px;
+    float: right;
+    color: rgb(70, 67, 67);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navegador .usuarioLogado{
+    margin: auto;
+    color: rgb(70, 67, 67);
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
