@@ -1,14 +1,20 @@
 import '../PaginaPrincipal/PaginaPrincipal.css'
 
 export function Postagem(props) {
-    return(
+    return (
         <div className="postagens">
-            <h4>{props.usuario}</h4>
-            <p>{props.texto}</p>
-            <span>{props.qtdLikes}</span>
-            <span>👍</span>
+            <div className="card">
+                <h4 className="cabecalho">{props.usuario}</h4>
+                <div className="card-texto">
+                    <p>{props.texto}</p>
+                </div>
+                <div className="interacoes">
+                    <h4 className="likes">{props.qtdLikes} likes</h4>
+                    <button>Curtir</button>
+                </div>
+            </div>
         </div>
-        
+
     )
 }
 

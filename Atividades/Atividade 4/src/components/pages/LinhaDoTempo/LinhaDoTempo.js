@@ -7,13 +7,31 @@ function ConteudoPostagens() {
         posts: [
             {
                 id: 1,
-                nomePessoa: "Joao",
+                nomePessoa: "João",
                 texto: "Menino, tá quente demais hoje",
                 qtdLikes: 1
             },
             {
                 id: 2,
                 nomePessoa: "Tiago",
+                texto: "Num aguento mais essa quintura",
+                qtdLikes: 3
+            },
+            {
+                id: 3,
+                nomePessoa: "Talia",
+                texto: "Num aguento mais essa quintura",
+                qtdLikes: 3
+            },
+            {
+                id: 4,
+                nomePessoa: "Tais",
+                texto: "Num aguento mais essa quintura",
+                qtdLikes: 3
+            },
+            {
+                id: 5,
+                nomePessoa: "Ana",
                 texto: "Num aguento mais essa quintura",
                 qtdLikes: 3
             }
@@ -25,7 +43,7 @@ function ConteudoPostagens() {
     
     )
     return (
-        <div>
+        <div className="linha-tempo">
             {postagem}
         </div>
     )

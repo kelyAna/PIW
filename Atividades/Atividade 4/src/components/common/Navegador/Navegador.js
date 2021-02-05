@@ -13,9 +13,12 @@ export function Navegador(props) {
                 <div className="logo">
                     <span>Rede Social 📱</span>
                 </div>
-                <Link linkTexto="Linha do tempo" linkClasse="link-linha" caminho="https://www.google.com/"></Link>
-                <Link linkTexto="Postar" linkClasse="link-navegador" caminho="https://www.google.com/"></Link>
-                <span className="usuarioLogado">Olá, {props.usuarioLogado}</span>
+                <div className="botoes">
+                    <Link linkTexto="Linha do tempo" linkClasse="link-linha" caminho="https://www.google.com/"></Link>
+                    <Link linkTexto="Postar" linkClasse="link-navegador" caminho="https://www.google.com/"></Link>
+                    <span className="usuarioLogado">{props.usuarioLogado}</span>
+                </div>
+
             </nav>
 
         </div>
