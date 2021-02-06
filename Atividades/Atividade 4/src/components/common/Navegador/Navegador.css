@@ -3,9 +3,7 @@
     display: flex;
     width: 700px;
     text-align: center;
-    margin: auto;
     align-items: center;
-    justify-content: center;
 }
 
 .navegador .botoes{
@@ -22,7 +20,7 @@
     padding: 20px;
     font-size: 15px;
     display: block;
-    color: rgb(72, 105, 214);
+    color: rgb(174, 189, 240);
     font-weight: bold;
 }
 
@@ -33,7 +31,7 @@
     padding: 20px;
     font-size: 15px;
     display: block;
-    color: rgb(72, 105, 214);
+    color: rgb(174, 189, 240);
     font-weight: bold;
     background-color: rgb(24, 24, 26);
 }
@@ -41,15 +39,15 @@
 .navegador .logo{
     padding: 30px;
     float: right;
-    color: rgb(72, 105, 214);
-    font-size: 20px;
+    color: rgb(174, 189, 240);
+    font-size: 30px;
     font-weight: bold;
     font-family: sans-serif;
 }
 
 .navegador .usuarioLogado{
     margin: auto;
-    color: rgb(72, 105, 214);
+    color: rgb(174, 189, 240);
     font-size: 15px;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;

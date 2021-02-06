@@ -1,7 +1,7 @@
 import '../PaginaPrincipal/PaginaPrincipal.css'
 import Post from '../Postagens/Post'
 
-function ConteudoPostagens() {
+function LinhaDoTempo() {
 
     let infoPosts = {
         posts: [
@@ -49,4 +49,4 @@ function ConteudoPostagens() {
     )
 }
 
-export default ConteudoPostagens
+export default LinhaDoTempo

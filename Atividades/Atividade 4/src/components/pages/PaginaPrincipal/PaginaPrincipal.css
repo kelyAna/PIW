@@ -6,10 +6,8 @@
 
 .card{
     display: flex;
-    margin: auto;
-    color: rgb(72, 105, 214);
+    color: rgb(174, 189, 240);
     flex-direction: column;
-    justify-content: center;
     background-color: rgb(0, 0, 0);
     width: 100%;
     margin: auto;
@@ -23,14 +21,14 @@
     padding: 30px;
     border-radius: 3%;
     margin: auto;
+    font-style: italic;
     height: 50%;
-    font-weight: bold;
     font-size: 18px;
     background-color: rgb(24, 24, 26);
 }
 
 .card .likes{
-    color: rgb(72, 105, 214);
+    color: rgb(174, 189, 240);
     padding: 10px;
 }
 
@@ -40,13 +38,19 @@
 
 .card .interacoes button{
     margin-left: auto;
-    background-color: black;
-    color: rgb(72, 105, 214);
+    color: rgb(174, 189, 240);
     font-weight: bold;
-    border: 1px solid white;
-    border-radius: 10%;
-    padding: 20px;
-    justify-content: center;
+    border: none;
+    background-color: rgb(24, 24, 26);
+    padding: 16px 32px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    border-radius: 15%;
+}
+
+.card .interacoes button:hover{
+    background-color: rgb(128, 113, 113);
+    color: white;
 }
 
 .linha-tempo{
@@ -64,6 +68,7 @@
 .cabecalho{
     margin-right: auto;
     padding: 20px;
+    font-size: 20px;
     margin-block-end: auto;
-    color: rgb(72, 105, 214);
+    color: rgb(174, 189, 240);
 }
