@@ -2,9 +2,12 @@
     display: flex;
     align-items: center;
     padding: 7px;
-    background-color: rgb(253, 233, 207);
+    background-color: #3a3838;
+    justify-content: center;
 }
-
+.cabecalho img{
+    width: 12rem;
+}
 .cabecalho .pagina-atual{
     margin-left: auto;
 }
