@@ -1,13 +1,14 @@
 import './App.css';
-import { BrowserRouter, Route } from 'react-router-dom'
+import { Router, Route } from 'react-router-dom'
+import history from './history'
 
-import PaginaPrincipal from './components/pages/PaginaPrincipal/PaginaPrincipal';
-import PaginaListarMatriculas from './components/pages/PaginaListarMatriculas/PaginaListarMatriculas'
-import { PaginaBuscarMatricula } from './components/pages/PaginaBuscarMatricula/PaginaBuscarMatricul';
+import { PaginaPrincipal }from './components/pages/PaginaPrincipal/PaginaPrincipal';
+import { PaginaListarMatriculas} from './components/pages/PaginaListarMatriculas/PaginaListarMatriculas';
+import { PaginaBuscarMatricula } from './components/pages/PaginaBuscarMatricula/PaginaBuscarMatricula'
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router history={history}>
       <Route exact path="/">
         <PaginaPrincipal></PaginaPrincipal>
       </Route>
@@ -24,7 +25,7 @@ function App() {
       >
 
       </Route>
-    </BrowserRouter>
+    </Router>
   )
 }
 

@@ -3,20 +3,22 @@ import './Navegador.css'
 import { Link, NavLink } from 'react-router-dom'
 
 export function Navegador() {
+    let id = 15;
+
     return (
         <div>
             <nav className="navegador">
                 <NavLink 
-                    exacts
+                    exact
                     className="link-navegador"
                     to="/">
                     Página inicial
                 </NavLink>
 
-                <Link className="link-navegador"
-                    to="/matriculas">
+                <NavLink className="link-navegador"
+                    to={"/matriculas/" + id}>
                     Listar matrículas
-                </Link>
+                </NavLink>
             </nav>
         </div>
     )

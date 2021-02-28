@@ -1,4 +1,5 @@
 import classNames from 'classnames'
+import history from './../../../history'
 
 import './PaginaPrincipal.css'
 
@@ -7,15 +8,14 @@ function Card({ nome, codigo, disponivel }) {
     let nomeClasses = classNames("card",{
         "fundo-vermelho": !disponivel,
     })
-    /*
-    let nomeClasse = "card";
-
-    if (disponivel === false) {
-        nomeClasse += " fundo-vermelho";
+    
+    function cardClicado(){
+        //console.log("Card clicado!")
+        history.push("/matriculas")
     }
-    */
+
     return (
-        <div className={nomeClasses}>
+        <div className={nomeClasses} onClick={cardClicado}>
             <h3 className="titulo-card">{nome}</h3>
             <span className="codigo-card">{codigo}</span>
         </div>
@@ -58,4 +58,4 @@ function Conteudo() {
     )
 }
 
-export default Conteudo
+export default Conteudo;

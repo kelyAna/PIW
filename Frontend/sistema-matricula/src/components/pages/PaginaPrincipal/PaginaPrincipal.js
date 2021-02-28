@@ -4,7 +4,7 @@ import Conteudo from './Conteudo'
 
 import './PaginaPrincipal.css'
 
-function PaginaPrincipal() {
+export function PaginaPrincipal() {
     return (
         <div>
             <Cabecalho paginaAtual="pagina de matricula"></Cabecalho>
@@ -14,5 +14,5 @@ function PaginaPrincipal() {
     )
 }
 
-export default (PaginaPrincipal)
+
 
