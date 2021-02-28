@@ -1,0 +1,120 @@
+.container{
+    width: 700px;
+    margin: auto;
+}
+
+
+.card{
+    display: flex;
+    color: rgb(21, 71, 233);
+    flex-direction: column;
+    background-color: rgb(252, 250, 250);
+    width: 80%;
+    margin: auto;
+    height: 400px;
+    padding: 20px;
+    border-radius: 2%;
+    border: 1px solid rgba(150, 149, 149, 0.152);
+}
+
+.card .comentarios{
+    font-size: 12px;
+    color: black;
+    margin: 2px;
+    background-color: rgba(24, 24, 26, 0.09);
+    padding: 10px;
+    color: blue;
+}
+
+.card-comentarios img{
+    width: 20px;
+}
+
+.card-comentarios .cabecalho-comentarios{
+    margin-right: auto;
+    padding: 5px;
+    font-size: 15px;
+    color: rgb(21, 71, 233);
+    align-items: center;
+    display: flex;
+}
+
+.card-comentarios p{
+    padding: 15px;
+    width: 200px;
+    height: 10px;
+    font-size: 12px;
+}
+
+
+.card .card-comentarios textarea{
+    padding: 5px;
+    font-size: 10px;
+    align-items: center;
+    margin-left:100px;
+    width: 50%;
+    color: blue;
+}
+.card .card-texto{
+    align-items: center;
+    padding: 30px;
+    border-radius: 3%;
+    margin: auto;
+    font-style: italic;
+    height: 30px;
+    font-size: 18px;
+    background-color: rgba(24, 24, 26, 0.09);
+}
+
+.card .likes{
+    padding: 10px;
+    margin: 2px;
+}
+
+.card .likes span{
+    margin: 5px;
+}
+
+.card .interacoes{
+    display: flex;
+}
+
+.card .interacoes button{
+    margin-left: auto;
+    border: none;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    border-radius: 60%;
+    height: 10px;
+}
+
+.card .interacoes button img{
+    width: 40px;
+}
+
+.linha-tempo{
+    height: 100vw;
+    background-color: rgb(0, 0, 0);
+}
+
+.postagens{
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+}
+
+.cabecalho{
+    margin-right: auto;
+    padding: 20px;
+    font-size: 15px;
+    color: rgb(21, 71, 233);
+    align-items: center;
+    display: flex;
+}
+
+.cabecalho img{
+    width: 30px;
+    margin: 5px;
+}
+
