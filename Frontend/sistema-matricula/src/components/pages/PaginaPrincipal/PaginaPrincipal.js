@@ -6,14 +6,31 @@ import Conteudo from './Conteudo'
 
 import './PaginaPrincipal.css'
 
-function Botao(){
+function Botao() {
     const [count, setCount] = useState(0)
+    const [clicado, setClicado] = useState(false)
 
-    function incrementarCount(){
+    const clicouBotao = () => {
         setCount(count+1)
+        setClicado(true)
     }
 
-    return <button onClick={incrementarCount}>
+    let estilo = {}
+    if(clicado===true){
+        estilo["background-color"] = "white"
+        estilo["border"] = "none"
+        estilo["padding"] = "15px"
+        estilo["color"] = "gray"
+        estilo["border-radius"] = "4px"
+    } else{
+        estilo["background-color"] = "pink"
+        estilo["border"] = "none"
+        estilo["padding"] = "15px"
+        estilo["color"] = "gray"
+        estilo["border-radius"] = "4px"
+    }
+
+    return <button onClick={clicouBotao} style={estilo}>
         Eu fui pressionado {count} vezes
     </button>
 }
