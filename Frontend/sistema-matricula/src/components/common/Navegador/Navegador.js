@@ -19,6 +19,11 @@ export function Navegador() {
                     to={"/matriculas/" + id}>
                     Listar matrículas
                 </NavLink>
+
+                <NavLink className="link-navegador"
+                    to={"/matriculas"}>
+                    Página de matricula
+                </NavLink>
             </nav>
         </div>
     )

@@ -5,7 +5,6 @@
 }
 
 .navegador .link-navegador{
-    transform: translate(65rem);
     text-decoration: none;
     padding: 8px;
     display: block;
