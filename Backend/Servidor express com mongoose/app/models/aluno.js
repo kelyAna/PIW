@@ -14,6 +14,10 @@ module.exports = function(){
                 unique: true
             }
         },
+        senha: {
+            type: "String",
+            required: true
+        }
     })
     return mongoose.model('Aluno', schema)
 }()

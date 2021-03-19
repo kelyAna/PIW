@@ -13,7 +13,8 @@ module.exports.logar = function(req, res){
             res.status(200).json({
                 message:"Logado",
                 token: token,
-                alunoId: aluno.id
+                alunoId: aluno.id,
+                nome: aluno.nome
             })
         }
     }

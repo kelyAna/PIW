@@ -10,7 +10,6 @@ function Card({ nome, codigo, disponivel }) {
     })
     
     function cardClicado(){
-        //console.log("Card clicado!")
         history.push("/matriculas")
     }
 
@@ -22,25 +21,7 @@ function Card({ nome, codigo, disponivel }) {
     )
 }
 
-function Conteudo() {
-    let disciplinas = [
-        {
-            nome: "LMS",
-            codigo: "QXD253",
-            disponivel: false
-        },
-        {
-            nome: "PIW",
-            codigo: "QXD250",
-            disponivel: true
-        },
-        {
-            nome: "PS",
-            codigo: "QXD251",
-            disponivel: false
-        }
-
-    ]
+function Conteudo({disciplinas}) {
     let cards = disciplinas.map((disciplina) => (
         <Card
             nome={disciplina.nome}

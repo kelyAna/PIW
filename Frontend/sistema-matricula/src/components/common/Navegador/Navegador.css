@@ -9,6 +9,7 @@
     padding: 8px;
     display: block;
     color: white;
+    cursor: pointer;
 }
 
 .navegador .link-navegador:hover{

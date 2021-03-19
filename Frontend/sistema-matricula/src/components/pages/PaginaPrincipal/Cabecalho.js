@@ -5,7 +5,7 @@ function Cabecalho({ paginaAtual }) {
         <div>
             <header className="cabecalho">
                 <img src="/logo.png" alt=""/>
-                <span className="pagina-atual">Você está na {paginaAtual}</span>
+                <span className="pagina-atual"></span>
             </header>
         </div>
     )

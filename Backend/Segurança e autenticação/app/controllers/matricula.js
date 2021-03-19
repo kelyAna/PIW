@@ -1,30 +1,9 @@
+const jwt = require('jsonwebtoken')
+
 const Matricula = require('../models/matricula.js');
 const viewMatricula = require('../views/matricula')
 
-const jwt = require('jsonwebtoken')
-
-module.exports.listarMatriculas = function (req, res) {
-    let token = req.headers.token
-    let payload = jwt.decode(token)
-    let id_aluno_logado = payload.id
-    
-    let promise = Matricula.find({aluno:id_aluno_logado})
-                            .populate("disciplina")
-                            .populate("aluno")
-                            .exec()
-    promise.then(
-        function (matriculas) {
-            res.json(viewMatricula.renderMany(matriculas))
-        }
-    ).catch(
-        function (erro) {
-            res.status(500).send('Erro');
-        }
-    );
-}
-
-
-module.exports.inserirMatricula = function (req, res) {
+module.exports.inserirMatricula = function(req, res) {
     let id_disciplina = req.body.disciplina
     let token = req.headers.token
     let payload = jwt.decode(token)
@@ -38,3 +17,19 @@ module.exports.inserirMatricula = function (req, res) {
         }
     );
 }
+
+module.exports.listarMatriculas = function (req, res) {
+    let token = req.headers.token
+    let payload = jwt.decode(token)
+    let id_aluno_logado = payload.id
+    
+    let promise = Matricula.find({aluno:id_aluno_logado}).populate("disciplinas").populate("alunos").exec()
+    promise.then(function(matriculas) {
+            res.status(200).json(viewMatricula.renderMany(matriculas))
+        }).catch(function(error) {
+            res.status(500).json({mensagem:"erro", error: error});
+        }
+    );
+}
+
+

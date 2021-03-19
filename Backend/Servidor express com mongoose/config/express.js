@@ -19,4 +19,5 @@ module.exports = function () {
     routerDisciplinas(app);
     routerMatricula(app)
     return app;
+
 }

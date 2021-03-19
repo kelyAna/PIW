@@ -1,0 +1,39 @@
+.container-pagina-postar{
+    width: 700px;
+    margin: auto;
+}
+
+.container-form{
+    display: flex;
+    color: rgb(21, 71, 233);
+    background-color: rgba(255, 255, 255, 0.789);
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    height: 300px;
+    padding: 20px;
+    border-radius: 2%;
+    border: 1px solid rgba(150, 149, 149, 0.152);
+}
+
+.container-form form button{
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.container-form form textarea{
+    background-color: rgba(255, 255, 255, 0.515);
+    width: 70%;
+    height: 100px;
+    color: rgba(0, 0, 255, 0.391);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 255, 0.159);
+}

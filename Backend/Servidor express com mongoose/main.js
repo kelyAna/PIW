@@ -7,4 +7,4 @@ http.createServer(app).listen(app.get('port'),
         console.log('Servidor rodando')
 });
 
-db('mongodb://localhost/sistemamatricula1');
+db('mongodb://localhost/sistemateste');

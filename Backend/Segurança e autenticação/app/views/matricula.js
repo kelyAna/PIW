@@ -1,8 +1,11 @@
+const viewAluno = require("../views/aluno")
+const viewDisciplina = require("../views/disciplinas")
+
 function render(matricula) {
     return {
         id: matricula._id,
-        aluno: matricula.aluno,
-        disciplina: matricula.disciplina
+        aluno: viewAluno.render(matricula.aluno),
+        disciplina: viewDisciplina.render(matricula.disciplina)
     }
 
 }

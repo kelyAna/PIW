@@ -10,7 +10,7 @@ module.exports = function () {
     let app = express();
 
     // Definindo variável de aplicação
-    app.set("port", 9890);
+    app.set("port", 9790);
     app.use(bodyParser.json());
     app.use(bodyParser.urlencoded({ extended: false }));
     
