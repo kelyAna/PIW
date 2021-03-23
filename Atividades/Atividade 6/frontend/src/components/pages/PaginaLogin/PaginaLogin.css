@@ -1,0 +1,26 @@
+form{
+    width: 250px;
+    margin: 0 auto;
+    padding: 20px;
+
+    color: white;
+    font-size: 20px;
+    align-items: center;
+}
+
+form input{
+    border: none;
+    padding: 3px;
+}
+
+form button{
+    color: white;
+    background-color: rgb(70, 143, 211);
+
+    padding: 10px;
+    width: 40%;
+
+    border: none;
+    border-radius: 3%;
+    margin-top: 10px;
+}

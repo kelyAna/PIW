@@ -1,0 +1,61 @@
+.navegador {
+    background-color: rgb(111, 155, 211);
+    display: flex;
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    padding: 0;
+}
+
+.navegador .botoes{
+    margin-left: auto;
+    display: flex;
+}
+
+.navegador li{
+    list-style: none;
+}
+
+.navegador .link-navegador{
+    text-decoration: none;
+    padding: 20px;
+    font-size: 15px;
+    display: block;
+    color: white;
+}
+
+.navegador .link-navegador.active{
+    background-color: rgba(0, 0, 255, 0.193);
+    border-radius: 10px;
+    margin: 2px;
+}
+
+.navegador .link-linha{
+    border-radius: 5%;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 15px;
+    display: block;
+    color: white;
+    background-color: rgb(24, 24, 26);
+}
+
+.navegador .logo{
+    padding: 30px;
+    float: right;
+    color: white;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+.navegador .logo img{
+    width: 40px;
+}
+
+.navegador .usuarioLogado{
+    margin: auto;
+    color: white;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

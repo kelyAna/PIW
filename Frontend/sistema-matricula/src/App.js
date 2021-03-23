@@ -26,7 +26,7 @@ function App() {
         <Route exact path="/">
           {
             auth.token === null ? <Redirect to="/login" /> :
-            <PaginaPrincipal/>
+              <PaginaPrincipal />
           }
         </Route>
 
